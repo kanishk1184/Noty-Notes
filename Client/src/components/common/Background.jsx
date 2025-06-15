@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion';
-import "./background.css"
+import "./Background.css"
 
 const Background = () => {
   const [vis2, setVis2] = useState(false);
