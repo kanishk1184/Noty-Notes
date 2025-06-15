@@ -38,7 +38,7 @@ const Dashboard = () => {
         const res = await API.get('folder/all');
         dispatch(setFolders(res.data.folders));
 
-        if (res.data.folders.length) dispatch(setCurrFolder(res.data.folders[0]));
+        if (res.data.folders.length && !currFolder) dispatch(setCurrFolder(res.data.folders[0]));
       }
       catch (err){
         const errorMsg = err.response ? err.response.data.message : "Something went wrong!";
