@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 import { setToken } from '../../features/auth/authSlice'
 import { Helmet } from 'react-helmet';
-import SubmitBtn from '../common/submitBtn'
+import SubmitBtn from '../common/SubmitBtn'
 import InputField from '../common/InputField'
 import TextField from '../common/TextField'
 import AuthErrorText from '../common/AuthErrorText'
