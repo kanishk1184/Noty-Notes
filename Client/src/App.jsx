@@ -21,7 +21,7 @@ function App() {
 
     const checkHealth = async ()=>{
       try{
-        await API.get("health");
+        API.get("health");
 
         console.log("Backend is Live");
       }
